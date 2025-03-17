@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyward Aviation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <h1>Welcome to Skyward Aviation</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Our Premium Services</h2>
+    <ol type="I">
+        <li>Luxury Private Jets</li>
+        <li>First-Class Commercial Flights</li>
+        <li>Cargo Logistics</li>
+        <li>Aircraft Leasing</li>
+        <li>VIP Airport Lounge Access</li>
+    </ol>
+    
+    <!-- External Image from Pexels -->
+    <h2>Experience the Sky</h2>
+    <img src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg" alt="Aircraft landing" width="600">
+    
+    <!-- Contact Table -->
+    <h2>Contact Information</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Skyway Ave, NY</td>
+            <td>+1 234 567 8901</td>
+            <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Cloud Rd, CA</td>
+            <td>+1 345 678 9012</td>
+            <td>janesmith@example.com</td>
+        </tr>
+        <tr>
+            <td>Mike Johnson</td>
+            <td>789 Airstrip Blvd, TX</td>
+            <td>+1 456 789 0123</td>
+            <td>mikejohnson@example.com</td>
+        </tr>
+        <tr>
+            <td>Emily Brown</td>
+            <td>101 Flight Ln, FL</td>
+            <td>+1 567 890 1234</td>
+            <td>emilybrown@example.com</td>
+        </tr>
+        <tr>
+            <td>Robert Wilson</td>
+            <td>202 Runway St, WA</td>
+            <td>+1 678 901 2345</td>
+            <td>robertwilson@example.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Register for Skyward Membership</h2>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a secure password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}" title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters">
+        <br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        
+        <label for="membership">Membership Type:</label>
+        <select id="membership" name="membership">
+            <option value="basic">Basic</option>
+            <option value="premium">Premium</option>
+            <option value="vip">VIP</option>
+        </select>
+        <br><br>
+        
+        <label>Preferred Contact Method:</label>
+        <input type="radio" id="email_contact" name="contact_method" value="email">
+        <label for="email_contact">Email</label>
+        <input type="radio" id="phone_contact" name="contact_method" value="phone">
+        <label for="phone_contact">Phone</label>
+        <br><br>
+        
+        <label>Services Interested In:</label>
+        <input type="checkbox" id="flights" name="services" value="flights">
+        <label for="flights">Commercial Flights</label>
+        <input type="checkbox" id="charters" name="services" value="charters">
+        <label for="charters">Private Charters</label>
+        <input type="checkbox" id="cargo" name="services" value="cargo">
+        <label for="cargo">Cargo Transport</label>
+        <br><br>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
